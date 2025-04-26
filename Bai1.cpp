@@ -2,7 +2,6 @@
 #include <cmath>
 using namespace std;
 
-// Hàm ki?m tra s? nguyên t?
 bool isPrime(int num) {
     if (num <= 1) return false;
     if (num == 2) return true;
@@ -21,9 +20,10 @@ int main() {
         int N;
         cout << "\nNhap so nguyen duong N: ";
         cin >> N;
-        
+        // Kiem tra dieu kien N > 2  
         if (N <= 2) {
             cout << "Khong co so nguyen to" << endl;
+            // Xu li truong hop khong co so nguyen to  
         } else {
             cout << "Cac so nguyen to nho hon " << N << " la: ";
             for (int i = 2; i < N; i++) {
@@ -33,7 +33,7 @@ int main() {
             }
             cout << endl;
         }
-        
+        // Cho phep nhap tiep ma khong can phai chay lai chuongg trinh 
         cout << "\Nhap tiep tuc? (y/n): ";
         cin >> tiepTuc;
         

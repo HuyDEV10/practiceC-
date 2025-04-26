@@ -19,7 +19,7 @@ int main() {
     int n;
     
     do {
-        cout << "Nhap so luong sinh viên (n > 0): ";
+        cout << "Nhap so luong sinh vien (n > 0): ";
         cin >> n;
         if (n <= 0) {
             cout << "So luong sinh vien phai lon hon 0. Vui long nhap lai." << endl;
@@ -27,7 +27,7 @@ int main() {
     } while (n <= 0);
     
     vector<SinhVien> danhSach(n);
-    
+    // Nhap thong tin cua tung sinh vien 
     for (int i = 0; i < n; i++) {
         cout << "\nNhap thong tin sinh vien thu " << i + 1 << ":" << endl;
         cout << "Ten: ";
@@ -62,7 +62,6 @@ int main() {
     }
     
     bool found = false;
-    // Ki?m tra trý?c xem có sinh viên nào có ði?m TB >= 8 không
     for (vector<SinhVien>::iterator it = danhSach.begin(); it != danhSach.end(); ++it) {
         if (it->tb >= 8) {
             found = true;
